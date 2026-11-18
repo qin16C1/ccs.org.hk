@@ -53,6 +53,10 @@ body.dark .tb em, .darktext em{font-family:var(--en);font-style:italic}
 .gfig{margin:0;overflow:hidden;background:#111}
 .gfig img{width:100%;height:100%;object-fit:cover}
 .ggray img{filter:grayscale(1) contrast(1.02)}
+a.glink{display:block}
+a.glink img{transition:filter .25s}
+a.glink:hover img{filter:brightness(1.18)}
+a.glink:hover .ggray img{filter:none}
 .gfig.wide{grid-column:1/-1;max-width:720px;margin:18px auto}
 .wide img{aspect-ratio:auto}
 .hero{margin:0;overflow:hidden}
