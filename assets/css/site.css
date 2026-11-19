@@ -85,7 +85,8 @@ a.glink:hover .ggray img{filter:none}
 .links{max-width:980px;margin-left:16%}
 body:not(.dark) .links{margin:0 auto}
 .lk{margin:0 0 1.6em}
-.lk a,.lk span{display:block}
+.lk-line{line-height:1.5}
+.lk-line.gap{margin-top:1.6em}
 .lk .zh,.lk b{color:#e8e2d2}
 body.dark .lk a{color:var(--gold)}
 
