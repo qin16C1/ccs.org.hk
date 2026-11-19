@@ -125,6 +125,11 @@ body.dark .lk a{color:var(--gold)}
 .mt{margin:0 0 1.5em}
 .mt a,.mt b{color:var(--red)}
 .mt a{border-bottom:1px solid rgba(142,42,42,.4)}
+.plink-ico{display:inline-block;vertical-align:middle;margin-left:10px}
+.plink-ico.ico-yt{width:46px;height:auto}
+.plink-ico.ico-bili{height:20px;width:auto}
+.wreaths{display:inline-flex;gap:6px;vertical-align:middle;margin-left:10px}
+.wreaths img{height:56px;width:auto;background:#141414;border-radius:6px;padding:3px 5px}
 
 /* ---------- movie ---------- */
 .movie-wrap{position:relative;min-height:calc(100vh - 140px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 20px}
