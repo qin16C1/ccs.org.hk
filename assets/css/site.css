@@ -115,15 +115,19 @@ body.dark .lk a{color:var(--gold)}
 .choi .vtext span{font-size:19px;letter-spacing:.4em;color:var(--ink)}
 .col.light .tb{color:var(--ink)}
 .col.light p.lead{font-size:19px;color:var(--ink)}
+/* 課程 landing section headings — Wix uses DIN Next LT Light 28px gray */
+.col.light .sect{font-family:"Saira","MS PGothic","Hiragino Kaku Gothic Pro","PingFang TC","Microsoft JhengHei",sans-serif;font-weight:400;
+  font-size:28px;color:#000;margin:30px 0 14px} /* Wix renders these black (inner span color:#000), 28px, weight 400 */
+a.glink:hover .sect{color:var(--gold-dim)}
 /* lineage typography — mimics Wix (zh page: DIN Next LT Light; en page: Matisse serif) */
 .col.light.lin{max-width:1013px} /* Wix content column is 957px wide */
-.col.light.lin p{font-family:"Saira","PingFang TC","Hiragino Sans","Microsoft JhengHei",sans-serif;font-weight:300;
-  font-size:18px;letter-spacing:.25em;line-height:2;color:#52330d;margin:0 0 36px}
+.col.light.lin p{font-family:"Saira","PingFang TC","Hiragino Sans","Microsoft JhengHei",sans-serif;font-weight:400;
+  font-size:18px;letter-spacing:.25em;line-height:2;color:#52330d;margin:0 0 36px} /* fw400 like Wix: Saira only loads 300 (Latin stays light), CJK renders Regular */
 .col.light.lin p.lead{font-size:24px;color:#616158;margin-bottom:30px}
 .col.light.lin p.cap{font-size:22px;letter-spacing:normal;color:#000;margin-bottom:30px}
 .col.light.lin-en p{font-family:var(--zh);letter-spacing:normal;font-size:15px;color:#52330d;margin-bottom:30px}
 .col.light.lin-en p.lead{font-size:24px;color:#616158}
-.col.light.lin-en p.cap{font-family:"Saira","PingFang TC","Hiragino Sans","Microsoft JhengHei",sans-serif;font-weight:300;
+.col.light.lin-en p.cap{font-family:"Saira","PingFang TC","Hiragino Sans","Microsoft JhengHei",sans-serif;font-weight:400;
   font-size:22px;color:#000;margin-bottom:30px}
 
 /* ---------- media ---------- */
