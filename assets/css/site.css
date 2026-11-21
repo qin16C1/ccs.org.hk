@@ -119,6 +119,22 @@ body.dark .lk a{color:var(--gold)}
 .col.light .sect{font-family:"Saira","MS PGothic","Hiragino Kaku Gothic Pro","PingFang TC","Microsoft JhengHei",sans-serif;font-weight:400;
   font-size:28px;color:#000;margin:30px 0 14px} /* Wix renders these black (inner span color:#000), 28px, weight 400 */
 a.glink:hover .sect{color:var(--gold-dim)}
+/* lineage photo slider — crossfades one at a time, loops (as on Wix) */
+.lin-slider{position:relative;margin:0;overflow:hidden;background:#111;aspect-ratio:1600/1066}
+.lin-slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  filter:grayscale(1) contrast(1.02);opacity:0}
+.lin-slider img:nth-child(1){animation:slf1 20s linear infinite}
+.lin-slider img:nth-child(2){animation:slf2 20s linear infinite}
+.lin-slider img:nth-child(3){animation:slf3 20s linear infinite}
+.lin-slider img:nth-child(4){animation:slf4 20s linear infinite}
+@keyframes slf1{0%,17.5%{opacity:1}25%,92.5%{opacity:0}100%{opacity:1}}
+@keyframes slf2{0%,17.5%{opacity:0}25%,42.5%{opacity:1}50%,100%{opacity:0}}
+@keyframes slf3{0%,42.5%{opacity:0}50%,67.5%{opacity:1}75%,100%{opacity:0}}
+@keyframes slf4{0%,67.5%{opacity:0}75%,92.5%{opacity:1}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  .lin-slider img{animation:none}
+  .lin-slider img:nth-child(1){opacity:1}
+}
 /* lineage typography — mimics Wix (zh page: DIN Next LT Light; en page: Matisse serif) */
 .col.light.lin{max-width:1013px} /* Wix content column is 957px wide */
 .col.light.lin p{font-family:"Saira","PingFang TC","Hiragino Sans","Microsoft JhengHei",sans-serif;font-weight:400;
