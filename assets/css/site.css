@@ -179,6 +179,37 @@ body.dark .lk a{color:var(--gold)}
 .col.light .sect{font-family:"Saira","MS PGothic","Hiragino Kaku Gothic Pro","PingFang TC","Microsoft JhengHei",sans-serif;font-weight:400;
   font-size:28px;color:#000;margin:30px 0 14px} /* Wix renders these black (inner span color:#000), 28px, weight 400 */
 a.glink:hover .sect{color:var(--gold-dim)}
+/* course detail pages (斲琴課程 / 古琴彈奏課程) — Wix layout: full-width photo, then
+   ~862px centered column; labels left, cream form fields 129px right of the labels */
+.cphoto{margin:0;position:relative;width:100%;height:var(--ph,462px);overflow:hidden;background:#ddd}
+.cphoto img{width:100%;height:100%;object-fit:cover}
+.cbody{max-width:862px;margin:0 auto;padding:var(--pt,34px) 16px 90px var(--cx,18px)}
+.ctitle{font-family:"Saira","MS PGothic","Hiragino Kaku Gothic Pro","PingFang TC","Microsoft JhengHei",sans-serif;
+  font-weight:400;color:#000;line-height:1.4;margin:0 0 26px}
+.ctitle.big{font-size:28px;letter-spacing:7px}
+.ctitle.small{font-size:22px;letter-spacing:5.5px}
+.creq,.cnote{font-family:"Saira","MS PGothic","Hiragino Kaku Gothic Pro","PingFang TC","Microsoft JhengHei",sans-serif;
+  font-weight:400;font-size:18px;color:#000;line-height:36px;margin:0;letter-spacing:4.5px}
+.creq{display:flex;align-items:flex-start;margin-bottom:43px}
+.cnote{margin-left:129px;max-width:719px}
+.crow{display:flex;align-items:flex-start;margin-top:24px}
+.clabel{width:129px;flex:none;font-family:"Saira","MS PGothic","Hiragino Kaku Gothic Pro","PingFang TC","Microsoft JhengHei",sans-serif;
+  font-weight:400;font-size:18px;color:#000;line-height:36px;letter-spacing:4.5px}
+.qform{width:532px;max-width:100%;display:flex;flex-direction:column;gap:5px}
+.qform input,.qform textarea{width:100%;border:1px solid transparent;border-radius:0;background:rgba(240,231,203,.48);
+  font-family:"Saira","PingFang TC","Hiragino Sans","Microsoft JhengHei",sans-serif;font-weight:300;
+  font-size:17px;line-height:23.8px;color:#616158;padding:3px 3px 3px 5px}
+.qform input{height:35px;padding-top:0;padding-bottom:0}
+.qform textarea[name="exp"]{height:81px;resize:none}
+.qform textarea[name="msg"]{height:146px;resize:none}
+.qform ::placeholder{color:rgba(97,97,88,.5)}
+.qbtnrow{display:flex;justify-content:space-between;align-items:center;margin-top:17px}
+.qbtn{width:109px;height:33px;flex:none;border:none;border-radius:50px;background:#FF8C62;color:#fff;
+  font-family:"Helvetica Neue",Helvetica,"PingFang TC",Arial,sans-serif;font-weight:300;
+  font-size:20px;line-height:1;cursor:pointer}
+.qbtn:hover{background:#fb7d4e}
+.csent{margin:0 0 0 6px;font-family:"Helvetica Neue",Helvetica,"PingFang TC",Arial,sans-serif;
+  font-size:14px;color:#FFA703}
 /* lineage photo slider — crossfades one at a time, loops (as on Wix) */
 .lin-slider{position:relative;margin:0;overflow:hidden;background:#111;aspect-ratio:1600/1066}
 .lin-slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
@@ -263,4 +294,9 @@ body:not(.dark) .ev-title{color:var(--ink)}
   .vname{writing-mode:horizontal-tb;letter-spacing:.4em}
   .col{padding:6px 18px 70px}
   .links{margin:0 auto}
+  .creq,.crow{flex-direction:column;align-items:flex-start}
+  .clabel{width:auto;margin-bottom:6px;line-height:1.9}
+  .cnote{margin-left:0}
+  .qform{width:100%}
+  .cbody{padding-left:16px;padding-right:16px}
 }
