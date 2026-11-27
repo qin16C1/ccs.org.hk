@@ -176,6 +176,14 @@ body.dark .lk a{color:var(--gold)}
   .choi-vtxt .vgap{height:auto;width:26px}
   .mk-vid,.choi-vid{width:100%}
 }
+/* qin-makers — Wix 6-column adjacent grid; grayscale photos with two colour exceptions:
+   Master Choi's large portrait (cols 1-3, rows 4-6) and a workshop photo (last row, cols 5-6) */
+.qm-grid{display:grid;grid-template-columns:repeat(6,1fr);width:min(978px,calc(100% - 36px));margin:0 auto}
+.qm-grid figure{margin:0;overflow:hidden;background:#111}
+.qm-grid img{width:100%;height:100%;object-fit:cover}
+.qm-grid .gfig,.qm-grid .qmbig{aspect-ratio:163/293}
+.qm-grid .qmbig{grid-column:span 3;grid-row:span 3}
+.qm-grid .qmwide{grid-column:span 2;height:100%}
 .col.light .tb{color:var(--ink)}
 .col.light p.lead{font-size:19px;color:var(--ink)}
 /* 課程 landing section headings — Wix uses DIN Next LT Light 28px gray */
@@ -302,4 +310,7 @@ body:not(.dark) .ev-title{color:var(--ink)}
   .cnote{margin-left:0}
   .qform{width:100%}
   .cbody{padding-left:16px;padding-right:16px}
+  .qm-grid{grid-template-columns:repeat(3,1fr)}
+  .qm-grid .qmbig{grid-column:span 3;grid-row:auto}
+  .qm-grid .qmwide{grid-column:span 3;height:auto;aspect-ratio:333/289}
 }
